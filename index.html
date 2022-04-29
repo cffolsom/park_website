@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Typical Park Website!</title>
-    <link rel="stylesheet" href="bootstrap.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Park Parkington</title>
 </head>
 <body>
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#aboutus">About us</a></li>
-        <li><a href="#gallaryinfo">Gallary</a></li>
-        <li><a href="#location">Our Location</a></li>
-    </ul>
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav-container text-light bg-dark">
+            <div class="navbar-brand">
+                <h1><a href="#">Park Parkington</a></h1>
+            </div>
+            <div class="navbar-list ">
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="#gallery">Photo Gallery</a></li>
+                    <li class="nav-item"><a href="#bottom">Our Location</a></li>
+                </ul>
+            </div>
 
-<h1>Welcome to the generic national park website!</h1>
-<div class="aboutustext">
-<p id="aboutus">We in our mission are commited to the health of this national park. We cover a 300 km acre
-    in this wonderful country with our dedicated staff of 40. Our men and woman have a wide
-    variety of tools in their disposals to ensure the health of this park! Such arsenals
-    include: rescue helicopters, night gear, very high amount of passion! Our animals thrive
-    in this part with little to no intrusion from our rangers and guests! Our animals include
-    lions, cougars, snow leopards, tigers, ligers, and so much more! Do call us using landline,
-    just call the operator and ask for Generic National park and we will give you information!
-</p>
-</div>
+        </div>
+    </nav>
 
-<h1 id="gallaryinfo">Our gallery of our beautiful park and animals!</h1>
+    <!-- Landing page -->
+    <section class="landing-page">
+        <div>
+            <img src="images/a-g-YuQgNYku1M8-unsplash.jpg" alt="Tiger" class="background w-100">
+        </div>
+        <h1 class="introduction text-center p-5 shadow-lg">Welcome to Park Parkington!</h1>
 
-<div class="gallery">
-    <a target="_blank" href="images/ash_tree.jpg">
-        <img src="images/ash_tree.jpg" alt="An Ash tree" width="600" height="400">
-    </a>
-    <div class="desc"> By Brian Green, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=13127021">Link</a></div>
-</div>
+    </section>
 
-<div class="gallery">
-    <a target="_blank" href="images/snow_leopard.jfif">
-        <img src="images/snow_leopard.jfif" alt="A Snow Leopard" width="600" height="400">
-    </a>
-    <div class="desc">By Irbis1983 - Own work, Public Domain, <a href="By Irbis1983 - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10471303">Link</a></a></div>
-</div>
+    <!-- Gallery -->
 
-<div class="gallery">
-    <a target="_blank" href="images/elephant.jpg">
-        <img src="images/elephant.jpg" alt="An Elephant" width="600" height="400">
-    </a>
-    <div class="desc">By Thomas Breuer - In the Shadows of the Congo Basin Forest, Elephants Fall to the Illegal Ivory Trade Gross L PLoS Biology Vol. 5, No. 4, Available online here and here, CC BY 2.5, <a href="https://commons.wikimedia.org/w/index.php?curid=2507332">Link</a> </div>
-</div>
+    <section id="gallery" class="p-10 p-lg-0 lg-10 text-center text-sm-start shadow-lg">
+        <div class="container p-5">
+            <h2 class="text-center p-5">See the gallery!</h2>
+            <div class="row g-4 p-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/elephant.jpg" alt="Elephant" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/ash_tree.jpg" alt="Ash Tree" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/max-van-den-oetelaar-S0txA-JnUFA-unsplash.jpg" alt="Tiger" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/bob-brewer-daC7ji1EMHM-unsplash.jpg" alt="Small Monkey" class="img-fluid shadow-lg p-0">
+                </div>
+            </div>
+            <div class="row g-4 p-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/christian-buehner-JQFHdpOKz2k-unsplash.jpg" alt="Me when I pass this course" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/zach-reiner-H7LxvEmVZnE-unsplash.jpg" alt="Branch" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/dusan-veverkolog-vyd2f5MCxeM-unsplash.jpg" alt="Solitude Monkey" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="images/chris-curry-mKaR_KpTh6o-unsplash.jpg" alt="Wise monkey" class="img-fluid shadow-lg p-0">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<h1 id="location">Come see us at our present location!</h1>
+    <!-- Map footer -->
+    <footer>
+        <div class="bottom" id="bottom">
+            <div class="bottomtitle mx-auto text-center p-5">
+                <h2>Come Visit us!</h2>
+            </div>
+            <div class="map">
+                <img src="images/instructions.png" alt="Map of 'Townsvile'" class="mapimg rounded mx-auto d-block p-5">
+            </div>
 
-<img src="images/instructions.png" class="route" alt="a map to our location" />
+        </div>
 
+
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>
